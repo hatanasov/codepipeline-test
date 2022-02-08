@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Action": [
+              "cloudwatch:*",
+              "s3:*"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      },
+      {
+          "Action": [
+              "codebuild:*"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      },
+      {
+          "Action": [
+              "codestar-connections:UseConnection"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      }
+  ]
+}
