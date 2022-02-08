@@ -32,6 +32,11 @@ resource "aws_codebuild_project" "build_image" {
       name  = "IMAGE_TAG"
       value = "latest"
     }
+
+    environment_variable {
+      name  = "DOCKERFILE_DIR"
+      value = "docker"
+    }
   }
 
     source {
