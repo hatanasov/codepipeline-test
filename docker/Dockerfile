@@ -1,7 +1,7 @@
 FROM public.ecr.aws/codebuild/amazonlinux2-x86_64-standard:3.0
 
 ### Install wget, unzip, curl, python ###
-RUN yum -y install unzip curl; yum clean all
+RUN yum -y update && yum -y install unzip curl; yum clean all
 
 ### Install aws cli
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" \
