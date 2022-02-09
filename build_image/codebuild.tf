@@ -29,6 +29,11 @@ resource "aws_codebuild_project" "build_image" {
     }
 
     environment_variable {
+      name  = "SOLUTION_DIR"
+      value = "build_image"
+    }
+
+    environment_variable {
       name  = "IMAGE_TAG"
       value = "latest"
     }
