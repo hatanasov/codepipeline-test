@@ -1,0 +1,45 @@
+{
+  "Statement": [
+      {
+          "Action": [
+              "codebuild:*",
+              "s3:*",
+              "codepipeline:*",
+              "codecommit:*",
+              "rds:*",
+              "ec2:*",
+              "ds:*",
+              "elasticbeanstalk:*",
+              "ecr:*",
+              "ecs:*",
+              "lambda:*",
+              "dynamodb:*",
+              "logs:*",
+              "kms:*",
+              "sns:*",
+              "ssm:*",
+              "ram:*",
+              "cloudtrail:*",
+              "guardduty:*",
+              "config:*",
+              "cloudformation:*",
+              "cloudwatch:*",
+              "route53:*",
+              "autoscaling:*",
+              "iam:*",
+              "elasticloadbalancing:*",
+              "application-autoscaling:*",
+              "organizations:*",
+              "budgets:*",
+              "sts:*",
+              "glacier:*",
+              "ses:*",
+              "securityhub:*",
+              "secretmanager:*"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+      }
+  ],
+  "Version": "2012-10-17"
+}
