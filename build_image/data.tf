@@ -1,3 +1,5 @@
+data "aws_caller_identity" "current" {}
+
 data "aws_s3_bucket" "artifacts" {
   bucket = "aws-codepipeline-test-eu-west-1-44233-artifacts"
 }

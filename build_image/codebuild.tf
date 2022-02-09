@@ -41,6 +41,6 @@ resource "aws_codebuild_project" "build_image" {
 
     source {
       type = "CODEPIPELINE"
-      buildspec = file("${path.module}/docker/buildspec.yml")
+      # buildspec = file("${path.module}/docker/buildspec.yml")
     }
 }
